@@ -1,0 +1,864 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #4648b2;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+header {
+    background: #3b1da4;
+    color: #3a30c9;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 40px;
+    text-align: center;
+    background: #522693;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5667d8;
+}
+
+nav ul li a:hover {
+    color: #6439c9;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 60%;
+}
+
+.about-content h2 {
+    color: #534acd;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: hsl(241, 54%, 50%);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #1414cf;
+}
+
+.image-box {
+    max-width: 200px;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 70%;
+    box-shadow: 0 0 10px rgba(38, 28, 185, 0.1);
+}
+
+section h2 {
+    color: #5a41c6;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.box {
+    flex: 1;
+    max-width: 300px;
+    background: #5248bc;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(251, 249, 249, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.contact-links {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.contact-links a {
+    display: block;
+    color: #1a76d8;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #405caf;
+    color: #0f0917;
+}
+/* Add the keyframe animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Apply animations */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #66449b;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header {
+    background: #575ba4;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    animation: slideInUp 1s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background: #ffffff;
+    animation: slideInUp 1s ease-in-out;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-content h2,
+section h2 {
+    color: #fefbfb;
+    margin-bottom: 1rem;
+    text-align: center;
+    animation: slideInUp 1.5s ease-in-out;
+}
+
+.about-content p,
+.row {
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 70%;
+    box-shadow: 0 0 10px rgba(5, 24, 229, 0.1);
+    text-align: right;
+
+}
+
+/* Animate all boxes */
+.row .box {
+    animation: slideInUp 1s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Delay the animations for a cascading effect */
+.row .box:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.row .box:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.row .box:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+.row .box:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.row .box:nth-child(5) {
+    animation-delay: 1.1s;
+}
+
+.row .box:nth-child(6) {
+    animation-delay: 1.3s;
+}
+
+.row .box:nth-child(7) {
+    animation-delay: 1.5s;
+}
+/* General animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Apply animations to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header {
+    background: #f0f0f2;
+    color: #f8f7f7;
+    padding: 1rem 0;
+    text-align: center;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background: #ffffff;
+    animation: slideInRight 1s ease-in-out;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #cee0f3;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-content h2,
+section h2 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-align: center;
+    animation: slideInUp 1.5s ease-in-out;
+}
+
+.about-content p,
+.row {
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(5, 16, 226, 0.1);
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+/* Animate all boxes */
+.row .box {
+    animation: slideInUp 1s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Delay the animations for a cascading effect */
+.row .box:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.row .box:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.row .box:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+.row .box:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.row .box:nth-child(5) {
+    animation-delay: 1.1s;
+}
+
+.row .box:nth-child(6) {
+    animation-delay: 1.3s;
+}
+
+.row .box:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+/* Interaction Animations */
+nav ul li a:hover, 
+.about-section:hover, 
+.row .box:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(251, 248, 248, 0.2);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff; /* Changed background color to blue */
+    animation: fadeIn 2s ease-in-out;
+}
+
+header {
+    background: #5757de; /* Adjusted the header background for a better match with the blue theme */
+    color: #f8f7fa;
+    padding: 1rem 0;
+    text-align: center;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background: #406de6; /* Adjusted the navigation background */
+    animation: slideInRight 1s ease-in-out;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffea00; /* Adjusted hover color to contrast with the blue background */
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-content h2,
+section h2 {
+    color: #5440d8; /* Changed text color to white for better readability */
+    margin-bottom: 1rem;
+    text-align: center;
+    animation: slideInUp 1.5s ease-in-out;
+}
+
+.about-content p,
+.row {
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+/* Animate all boxes */
+.row .box {
+    background: #504eb2; /* White background for boxes */
+    color: #f9f8f8; /* Black text color inside boxes */
+    animation: slideInUp 1s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    border-radius: 10px; /* Rounded corners for the boxes */
+}
+
+/* Delay the animations for a cascading effect */
+.row .box:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.row .box:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.row .box:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+.row .box:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.row .box:nth-child(5) {
+    animation-delay: 1.1s;
+}
+
+.row .box:nth-child(6) {
+    animation-delay: 1.3s;
+}
+
+.row .box:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+/* Interaction Animations */
+nav ul li a:hover, 
+.about-section:hover, 
+.row .box:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.image-box {
+    max-width: 200px;
+    margin-right: auto; /* Ensure the image aligns left */
+    margin-left: 0; /* Reset any left margin */
+    transform: translateX(-10%); /* Slightly move the image to the left */
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #111010; /* Changed link color to black */
+    transition: color 0.3s;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #0e0808; /* Optional: Dark gray on hover for a subtle effect */
+}
+
+.contact-links a {
+    display: block;
+    color: #070707; /* Changed link color to black */
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+    color: #3d4abd; /* Optional: Dark gray on hover */
+}
+
+.languages-known {
+    padding: 2rem 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.languages-known h2 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    animation: slideInUp 1.5s ease-in-out;
+}
+
+.languages-known .box {
+    max-width: 300px;
+    background: hsl(0, 8%, 95%);
+    padding: 1rem;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.languages-known ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.languages-known ul li {
+    color: #e8dfdf;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    animation: fadeIn 2s ease-in-out;
+}
+.technical-skills {
+    padding: 2rem 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.technical-skills h2 {
+    color: #35309c;
+    margin-bottom: 1rem;
+    animation: slideInUp 1.5s ease-in-out;
+}
+
+.skills-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.skills-boxes .box {
+    max-width: 150px;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(251, 251, 251, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.skills-boxes .box img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.skills-boxes .box p {
+    font-size: 1rem;
+    color: #f4efef;
+    margin: 0;
+}
+
+.technical-skills .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.technical-skills img {
+    width: 100%; /* Adjusted zoom level */
+    max-width: 400px; /* Ensure the image doesn't get too large */
+    height: auto;
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.Expertises .box {
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #2538a2;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Expertises ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Expertises ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+
+/* Education Section */
+#education .box {
+    background-color: rgb(68, 68, 160);
+    color: white; /* To ensure text is visible on a blue background */
+    padding: 20px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+
+    .box {
+        background-color: rgb(85, 85, 193);
+        color: rgb(252, 252, 253); /* Ensures text is readable on a blue background */
+        padding: 15px;
+        border-radius: 5px;
+        border: 2px solid #ddd;
+        margin-bottom: 15px;
+    }
+
+    #experience .box {
+        background-color: rgb(97, 97, 210);
+        color: rgb(248, 247, 250);
+        padding: 15px;
+        border-radius: 5px;
+        border: 2px solid #ddd;
+        margin-bottom: 15px;
+    }
+
+     
+    
+    
+    
+    #Participations .box {
+        background-color: rgb(48, 62, 226);
+        color: white;
+        padding: 15px;
+        border-radius: 5px;
+        
+        margin-bottom: 15px;
+    }
+
+    
+    .technical-skills img {
+        border: 5px solid white; /* Adjust the width as needed */
+        border-radius: 10px; /* Optional: adds rounded corners */
+        box-sizing: border-box;
+        max-width:200px;
+        
+
+    }
+
+    .technical-skills img {
+        border: 5px solid white; /* White border */
+        border-radius: 10px; /* Rounded corners */
+        box-sizing: border-box;
+        height: 800px; /* Adjust the height as needed */
+        width: auto; /* Maintains aspect ratio */
+    }
+    #technical-skills h2 {
+        color: white;
+    }
+      
+    .row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+    
+    .box {
+        background-color: #443fc3;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        min-width: 200px;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    #languages h2 {
+        color: rgb(79, 60, 174); /* Assuming you want to match the style */
+        text-align: center;
+    }
+
+        #Technicalskills h1 {
+            color: rgb(66, 45, 174); /* Assuming you want to match the style */
+            text-align: center;
+        
+    }
+    .projects {
+        display: inline-block;
+        background: #000409;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    projects:hover {
+        background: #447fbe;
+    }
+    .timeline {
+        position: relative;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .timeline-item {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .timeline-dot {
+        width: 16px;
+        height: 16px;
+        background-color: #44369a;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+  
+
+    #education {
+        padding: 2rem;
+        background-color: #ffffff; /* Light background color for contrast */
+    }
+    
+    .education-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center items horizontally */
+        gap: 1rem; /* Space between boxes */
+    }
+    
+    .education-item {
+        background-color: #4459be; /* White background for the boxes */
+        border: 1px solid #ffffff; /* Light border for the boxes */
+        border-radius: 8px; /* Rounded corners */
+        padding: 1rem;
+        width: 300px; /* Width of each box */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+    
+    .education-item h3 {
+        margin-top: 0;
+        color: #fcf8f8; /* Darker text color for headings */
+    }
+    
+    .education-item p {
+        margin: 0;
+        color: #f6f2f2; /* Lighter text color for paragraph */
+    }
+    .skills-heading {
+        color: #2828a2; /* Blue color */
+        font-size: 2rem; /* Adjust the size as needed */
+        font-weight: bold; /* Optional: Makes the text bold */
+    }
+    .navbar-heading {
+        color: #1839dc; /* White color */
+        font-size: 2rem; /* Adjust the size as needed */
+        font-weight: bold; /* Optional: Makes the text bold */
+    }
+    
+    /* Navbar heading */
+.navbar-heading {
+    color: #fbfdff; /* White color */
+}
+
+/* Navbar details (links or other elements) */
+.navbar-details {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.navbar-details .nav-link {
+    color: #ffffff; /* White color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Add padding around the links */
+    display: inline-block; /* Ensure links are inline */
+}
+
+.navbar-details .nav-link:hover {
+    color: #cccccc; /* Optional: Change color on hover */
+}
+
+.Frameworks {
+    color: #2828a2; /* Blue color */
+    font-size: 2rem; /* Adjust the size as needed */
+    font-weight: bold; /* Optional: Makes the text bold */
+}
+/* Default light theme */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
